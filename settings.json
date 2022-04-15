@@ -1,0 +1,24 @@
+{
+    "sat_nos": [
+        39084,
+        49260
+    ],
+    "time_range": {
+        "start_yr": 2022,
+        "start_mo": 4,
+        "start_day": 20,
+        "days": 1,
+        "step_min": 1
+    },
+    "inst_params": {
+        "name": "tirs",
+        "fl": 178,
+        "pitch": 0.025,
+        "h_pix": 1850,
+        "v_pix": 4000,
+        "mm": true
+    },
+    "cell": 5,
+    "continent": "Brazil",
+    "sat_ids": "{\"0\":39084,\"1\":49260}"
+}
