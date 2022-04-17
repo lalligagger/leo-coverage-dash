@@ -9,7 +9,6 @@ import pandas as pd
 import pprint
 import plotly.express as px
 import json
-import diskcache
 from sgp4.api import Satrec, WGS72
 from skyfield.api import EarthSatellite, load, wgs84
 
