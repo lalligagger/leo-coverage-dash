@@ -5,7 +5,7 @@ Install repo2docker CLI tool https://repo2docker.readthedocs.io/en/latest/gettin
 
 Pull this repo, build container but don't run:
 
-`repo2docker --image-name dash_app https://github.com/lalligagger/leo-coverage-dash.git`
+`repo2docker --image-name dash_app --no-run https://github.com/lalligagger/leo-coverage-dash.git`
 
 Run app with port forwarding:
 
