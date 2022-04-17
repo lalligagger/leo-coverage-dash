@@ -10,3 +10,5 @@ Pull this repo, build container but don't run:
 Run app with port forwarding:
 
 `docker run -p 8050:8050 dash_app python app.py`
+
+![screenshot](leo-coverage.png)
