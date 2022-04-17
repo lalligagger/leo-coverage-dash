@@ -6,8 +6,8 @@
     "time_range": {
         "start_yr": 2022,
         "start_mo": 4,
-        "start_day": 20,
-        "days": 1,
+        "start_day": 1,
+        "days": 14,
         "step_min": 1
     },
     "inst_params": {
@@ -18,7 +18,7 @@
         "v_pix": 4000,
         "mm": true
     },
-    "cell": 5,
+    "cell": 0.5,
     "continent": "Brazil",
     "sat_ids": "{\"0\":39084,\"1\":49260}"
 }

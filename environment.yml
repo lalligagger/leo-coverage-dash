@@ -1,4 +1,4 @@
-name: dash_app #Environment name
+name: dash_coverage #Environment name
 dependencies:
   - python=3.10
   - pip:

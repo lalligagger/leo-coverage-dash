@@ -16,6 +16,17 @@ import json
 # TODO: Create main function that generates either a FOV (Swath) map or a revisit (gridded raster) map.
 # i.e., python coverage.py -t "swath" for swath type from cmd line, looks at settings.json for config.
 
+# TODO: Delete these default settings in favor of .json
+settings = {
+    "sat_nos": [39084, 49260],
+    "time_range": dict(start_yr=2021, start_mo=12, start_day=10, days=1, step_min=1),
+    "inst_params": dict(
+        name="tirs", fl=178, pitch=0.025, h_pix=1850, v_pix=4000, mm=True
+    ),
+    "cell": 0.5,
+    # "continent": "North America",
+    "continent": "Brazil",
+}
 
 def gen_sats(sat_nos=[39084, 49260]):
     """
@@ -287,19 +298,6 @@ def create_grid(bounds, xcell_size, ycell_size):
     grid = gpd.GeoDataFrame(grid_points, columns=["geometry"], crs=crs)
 
     return grid, grid_shape
-
-
-# TODO: Delete these default settings in favor of .json
-settings = {
-    "sat_nos": [39084, 49260],
-    "time_range": dict(start_yr=2021, start_mo=12, start_day=10, days=1, step_min=1),
-    "inst_params": dict(
-        name="tirs", fl=178, pitch=0.025, h_pix=1850, v_pix=4000, mm=True
-    ),
-    "cell": 5,
-    # "continent": "North America",
-    "continent": "Brazil",
-}
 
 
 def gen_coverage_plot(continent, maptype, settings):
