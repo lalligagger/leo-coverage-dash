@@ -1,5 +1,5 @@
 # leo-coverage-dash
-Dash app for low-Earth orbit (LEO) satellite coverage
+Dash app for low-Earth orbit (LEO) satellite coverage.
 
 Install repo2docker CLI tool https://repo2docker.readthedocs.io/en/latest/getting-started/index.html
 
